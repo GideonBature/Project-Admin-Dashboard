@@ -21,7 +21,6 @@ a:hover {
 }
 
 .container {
-    height: 100vh;
     width: 100vw;
     background-color: var(--neutral);
     display: grid;
@@ -67,7 +66,7 @@ a:hover {
 }
 
 input[type="search"] {
-    width: 400px;
+    width: 80%;
     height: 30px;
     border-radius: 100px;
     border: none;
@@ -94,31 +93,77 @@ input[type="search"] {
 
 
 .main {
-    background-color: var(--neutral);
+    /* background-color: var(--neutral); */
+    display: grid;
+    gap: 4%;
+    grid-template-columns: 2;
+    grid-template-rows: 6;
     grid-column: 2/ 3;
     grid-row: 2 / 3;
+    margin: 4%;
 }
 
 .cards {
     display: grid;
-    width: 80vw;
-    height: 100vh;
-    gap: 20px;
+    gap: 7%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
 .card {
     background-color: white;
-    width: 250px;
-    height: 180px;
+    width: 85%;
+    height: 85%;
     padding: 15px;
     border-left: #facc15 solid 8px;
     border-radius: 10px;
 }
 
-.icon {
-    width: 15px;
+.your-projects h3, .announcements h3, .trending h3 {
+padding-bottom: 10px;
+}
+
+.your-projects {
+    grid-column: 1/2;
+    grid-row: 1/7;
+}
+
+.announcements {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.announcements-container {
+    padding: 20px;
+    background-color: white;
+    height: 37vh;
+    width: 20vw;
+    border-radius: 10px;
+
+}
+
+hr {
+    margin: 15px 0;
+}
+
+.trending {
+    grid-column: 2/3;
+    grid-row: 4/5;
+
+}
+
+.trending-container {
+    padding: 20px;
+    background-color: white;
+    height: 35vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.trending-profile {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    padding-top: 5%;
 }
 
 .footer {
