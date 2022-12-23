@@ -39,22 +39,86 @@ a:hover {
 
 .header {
     background-color: white;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.top-header {
+    display: grid;
+    grid-template-rows: 0.5fr;
+    grid-template-columns: 3fr 0.2fr 0.2fr 1fr;
+    align-content: center;
+    padding-bottom: 15px;
+}
+
+.bottom-header {
+    display: grid;
+    grid-template-columns: 3fr 0.6fr 0.6fr 0.6fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+}
+
+.bottom-profile-header {
+    display: grid;
+    grid-template-columns: 0.1fr 0.2fr;
+    align-content: center;
+
 }
 
 input[type="search"] {
-    width: 350px;
-    height: 20px;
+    width: 400px;
+    height: 30px;
     border-radius: 100px;
     border: none;
     background-color: var(--neutral);
   }
 
+  input[placeholder="search"] {
+    text-align: center;
+  }
+
+  .btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: white;
+  }
+
+  button:hover {
+    background-color: var(--light-blue);
+  }
+
+
+
 .main {
     background-color: var(--neutral);
     grid-column: 2/ 3;
     grid-row: 2 / 3;
+}
+
+.cards {
+    display: grid;
+    width: 80vw;
+    height: 100vh;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    height: 180px;
+    padding: 15px;
+    border-left: #facc15 solid 8px;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 15px;
 }
 
 .footer {
